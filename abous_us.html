@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>University Website - About Us</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="shortcut icon" href="./image/university_logo.png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&family=Roboto:wght@500&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+
+        <section class="sub-header">
+
+            <nav>
+                <a href="page_1.html"><img src="./image/university_logo.png" /></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="http://127.0.0.1:5500/page_1.html">Начало</a></li>
+                        <li><a href="#">За Нас</a></li>
+                        <li><a href="#">Курсове</a></li>
+                        <li><a href="#">Контакти</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" aria-hidden="true" onclick="showMenu() "></i>
+            </nav>
+            <h1>За Нас</h1>
+        </section>
+
+        <section class="about_us">
+            <div class="row">
+                <div class="about_col">
+                    <h1>We are the world's largest University.</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla, eleifend faucibus purus. Donec sit amet nisl non justo malesuada fermentum. Donec eget felis dolor. Suspendisse condimentum vestibulum ex ac cursus. Nam pharetra viverra efficitur. Sed pellentesque luctus arcu, quis finibus nibh luctus mattis.</p>
+                    <a href="#" class="hero-btn red-btn">EXPLORE NOW</a>
+                </div>
+                <div class="about_col">
+                    <img src="image/office.jpg" />
+                </div>
+            </div>
+        </section>
+            
+        <section class="footer">
+            <h4>За Нас</h4>
+            <p>Българският Софтуерен Университет предлага на своите курсанти знания, за да станат сред най-добрите програмисти в страната. Разполагаме с високо качествени компютри позволяващи предобиването на необходимите умения.</p>
+            <div class="icons">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+                <i class="fa fa-youtube" aria-hidden="true"></i>
+            </div>
+        </section>
+
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+
+    </body>
+</html>
