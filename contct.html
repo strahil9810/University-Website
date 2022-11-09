@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>University Website - About Us</title>
+        <title>University Website - Contact</title>
         <link rel="stylesheet" type="text/css" href="css/style.css" />
         <link rel="shortcut icon" href="./image/university_logo.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -30,18 +30,46 @@
                 </div>
                 <i class="fa fa-bars" aria-hidden="true" onclick="showMenu() "></i>
             </nav>
-            <h1>За Нас</h1>
+            <h1>За връзка</h1>
         </section>
 
-        <section class="about_us">
+        <section class="location">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23459.16118923225!2d23.323358449999997!3d42.695353149999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40aa856dd1517c85%3A0xffb5a61b370ddfaa!2sSofia%20Center%2C%20Sofia!5e0!3m2!1sen!2sbg!4v1667995457236!5m2!1sen!2sbg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        <section class="contact_us">
             <div class="row">
-                <div class="about_col">
-                    <h1>We are the world's largest University.</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla, eleifend faucibus purus. Donec sit amet nisl non justo malesuada fermentum. Donec eget felis dolor. Suspendisse condimentum vestibulum ex ac cursus. Nam pharetra viverra efficitur. Sed pellentesque luctus arcu, quis finibus nibh luctus mattis.</p>
-                    <a href="#" class="hero-btn red-btn">EXPLORE NOW</a>
+                <div class="contact_col">
+                    <div>
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                        <span>
+                            <h5>Ж.К. БАНИШОРА, ул. "Кавала" 40</h5>
+                            <p>СОФИЯ, БЪЛГАРИЯ</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <span>
+                            <h5>02/ 987 456</h5>
+                            <p>Пон - Пт, 10:00 - 17:30</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        <span>
+                            <h5>strahilhristov1998@gmail.com</h5>
+                            <p>Изпратете ни вашето запитване по имейл</p>
+                        </span>
+                    </div>
                 </div>
-                <div class="about_col">
-                    <img src="image/office.jpg" />
+                <div class="contact_col">
+                    <form action="./php/contact-form.php" method="post">
+                        <input type="text" name="name" placeholder="Въведете вашето име" required />
+                        <input type="text" name="email" placeholder="Въведете вашият имейл" required />
+                        <input type="text" name="subject" placeholder="Въведете тема" required />
+                        <textarea rows="8" name="message" placeholder="Съобщение..." required></textarea>
+                        <button type="submit" class="hero-btn red-btn">Изпрати</button>
+                    </form>
                 </div>
             </div>
         </section>
